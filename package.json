@@ -1,0 +1,11 @@
+{
+  "name": "aud",
+  "version": "1.0.0",
+  "description": "",
+  "main": "scripts/server.js",
+  "scripts": {
+    "test": "node scripts/server.js"
+  },
+  "author": "",
+  "license": "ISC"
+}
