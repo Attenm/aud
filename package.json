@@ -4,8 +4,12 @@
   "description": "",
   "main": "scripts/server.js",
   "scripts": {
-    "test": "node scripts/server.js"
+    "start": "node scripts/server.js"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }
+
