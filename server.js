@@ -22,6 +22,7 @@ app.get('/audio', (req, res) => {
     console.log(folderPath)
     fs.readdir(folderPath, (err, files) => {
         if (err) {
+            console.log(err);
             return res.status(500).json({ error: 'Could not read list of songs' });
         }
         files.map(fileName => {
