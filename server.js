@@ -29,7 +29,7 @@ app.get('/audio', (req, res) => {
         })
         const songs = files.map(fileName => {
             return {
-                path: `${encodeURIComponent(fileName)}`,
+                path: `public/audio/${encodeURIComponent(fileName)}`,
                 name: fileName
             };
         });
