@@ -2,9 +2,9 @@
   "name": "aud",
   "version": "1.0.0",
   "description": "",
-  "main": "src/scripts/server.js",
+  "main": "server.js",
   "scripts": {
-    "start": "node src/scripts/server.js"
+    "start": "node server.js"
   },
   "author": "",
   "license": "ISC",
