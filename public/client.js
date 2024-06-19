@@ -10,14 +10,13 @@ document.addEventListener('DOMContentLoaded', () => {
                 throw new Error('Network response was not ok');
             }
             const data = await response.json();
-            return data;
+            return data.result;
         } catch (error) {
             console.error('There has been a problem with your fetch operation:', error);
         }
     };
 
-    const displaySongs = (data) => {
-        const songs = data.result;
+    const displaySongs = (songs) => {
         const emptyBox = document.getElementById('empty');
         const songsListHtml = '<ul class="songs__list"></ul>'
         emptyBox.insertAdjacentHTML('afterend', songsListHtml);
@@ -35,8 +34,8 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
     const clickHandler = async () => {
-        const data = await findSongs();
-        displaySongs(data);
+        const songs = await findSongs();
+        displaySongs(songs);
     };
 
     getSongsBtn.addEventListener('click', clickHandler);
